@@ -35,3 +35,18 @@ Aplicacion full-stack desarrollada con .NET 9 (Backend) y React + Vite + TypeScr
 
 ```bash
 dotnet run
+```
+### 2. Frontend (React)
+
+Entra a la carpeta del frontend e instala las dependencias:
+
+```bash
+cd front
+npm install
+```
+
+### 3.Inicia el servidor de desarrollo:
+
+```Bash
+npm run dev
+```
