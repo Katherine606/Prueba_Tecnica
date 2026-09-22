@@ -16,6 +16,74 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Prueba_Tecnica.Controllers.ReservationController",
+    "Method": "ListarMisReservas",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba_Tecnica.Controllers.ReservationController",
+    "Method": "CrearReserva",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Prueba_Tecnica.Models.DTOs.ReservaCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba_Tecnica.Controllers.ReservationController",
+    "Method": "AprobarReserva",
+    "RelativePath": "api/Reservations/{id}/approve",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba_Tecnica.Controllers.ReservationController",
+    "Method": "RechazarReserva",
+    "RelativePath": "api/Reservations/{id}/decline",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba_Tecnica.Controllers.ReservationController",
+    "Method": "ListarReservas",
+    "RelativePath": "api/Reservations/todas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Prueba_Tecnica.Controllers.RoomsController",
     "Method": "ListarSalas",
     "RelativePath": "api/rooms",
@@ -43,7 +111,7 @@
   },
   {
     "ContainingType": "Prueba_Tecnica.Controllers.UsersController",
-    "Method": "GetAllUsers",
+    "Method": "ListarUsuarios",
     "RelativePath": "api/users",
     "HttpMethod": "GET",
     "IsController": true,
@@ -53,7 +121,7 @@
   },
   {
     "ContainingType": "Prueba_Tecnica.Controllers.UsersController",
-    "Method": "CreateUser",
+    "Method": "CrearUsuario",
     "RelativePath": "api/users",
     "HttpMethod": "POST",
     "IsController": true,

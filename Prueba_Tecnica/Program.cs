@@ -11,6 +11,8 @@ using Prueba_Tecnica.Services;
 using System.Data;
 using System.Text;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -39,12 +41,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ClockSkew = TimeSpan.Zero
         };
 
-
-        //para el bearer
+        // Para el manejo personalizado del Bearer
         options.Events = new JwtBearerEvents
         {
-
-
             OnChallenge = async (context) =>
             {
                 context.HandleResponse();
@@ -59,7 +58,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
             OnForbidden = async context =>
             {
-
                 context.Response.StatusCode = 403;
                 context.Response.ContentType = "application/json";
 
@@ -68,26 +66,24 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     mensaje = "No tiene autorización para acceder a este recurso."
                 });
             }
-
         };
     });
 
 builder.Services.AddAuthorization();
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 
+// Inyección de dependencias (Repositorios y Servicios)
 builder.Services.AddScoped<RoomsRepository>();
 builder.Services.AddScoped<RoomService>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<AuthRepository>();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddScoped<ReservationService>();
+builder.Services.AddScoped<ReservationsRepository>();
+
 builder.Services.AddOpenApi();
-
-
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -116,11 +112,11 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-
-
 var app = builder.Build();
+
 app.UseMiddleware<ExcepcionesGlobales>();
-// Configure the HTTP request pipeline.
+
+// Configuración del pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -133,6 +129,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
 

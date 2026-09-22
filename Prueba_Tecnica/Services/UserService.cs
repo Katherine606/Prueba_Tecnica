@@ -18,7 +18,7 @@ namespace Prueba_Tecnica.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<UserListaDto>> GetAllUsersAsync()
+        public async Task<IEnumerable<UserListaDto>> ListarUsuariosAsync()
         {
             var users = await _userRepository.ListarUsuariosAsync();
 

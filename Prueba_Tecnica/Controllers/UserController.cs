@@ -17,14 +17,14 @@ namespace Prueba_Tecnica.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> ListarUsuarios()
         {
-            var users = await _userService.GetAllUsersAsync();
+            var users = await _userService.ListarUsuariosAsync();
             return Ok(users);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] UserCrearDto dto)
+        public async Task<IActionResult> CrearUsuario([FromBody] UserCrearDto dto)
         {
    
            var nuevoUser = await _userService.CrearUsuarioAsync(dto);

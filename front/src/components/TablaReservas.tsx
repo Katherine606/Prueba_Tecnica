@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
 
-interface Room {
+interface Reservation {
   id: number;
-  name: string;
-  capacity: number;
-  location: string;
+  startTime: string;
+  endTime: string;
+  status: string;
+  usuarioNombre: string;
+  salaNombre: string;
 }
 
-export function TablaSalas() {
-  const [rooms, setRooms] = useState<Room[]>([]);
-  const [esAdmin, setEsAdmin] = useState<boolean>(false);
+export function TablaReservas() {
+  const [reservas, setReservas] = useState<Reservation[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
   const navigate = useNavigate();
@@ -23,36 +24,20 @@ export function TablaSalas() {
       return;
     }
 
-    try {
-      const payloadBase64 = token.split(".")[1];
-      const decodedPayload = JSON.parse(atob(payloadBase64));
-
-      const rolUser =
-        decodedPayload[
-          "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
-        ] ||
-        decodedPayload["role"] ||
-        decodedPayload["Rol"] ||
-        "";
-
-      setEsAdmin(rolUser.toLowerCase() === "admin");
-    } catch (e) {
-      console.error("No se pudo leer el rol del token", e);
-    }
-
-    cargarSalas();
+    cargarMisReservas();
   }, [navigate]);
 
-  const cargarSalas = async () => {
+  const cargarMisReservas = async () => {
     try {
       setLoading(true);
-      const response = await api.get("/rooms");
-      setRooms(response.data);
+
+      const response = await api.get("/reservations");
+      setReservas(response.data);
     } catch (err: any) {
       if (err.response && err.response.data && err.response.data.mensaje) {
         setError(err.response.data.mensaje);
       } else {
-        setError("Error al cargar la lista de salas.");
+        setError("Error al cargar tus reservas.");
       }
     } finally {
       setLoading(false);
@@ -73,26 +58,17 @@ export function TablaSalas() {
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
-          <h2>Gestión de Salas</h2>
+          <h2>Mis Reservas</h2>
         </div>
 
         <div>
           <button
             className="btn btn-outline-primary btn-sm"
             onClick={() => {
-              navigate("/TablaReservas");
+              navigate("/salas");
             }}
           >
-            Ver reservas
-          </button>
-          <button
-            className="btn btn-outline-danger btn-sm"
-            onClick={() => {
-              localStorage.removeItem("token");
-              navigate("/login");
-            }}
-          >
-            Cerrar Sesión
+            Volver
           </button>
         </div>
       </div>
@@ -109,27 +85,29 @@ export function TablaSalas() {
             <thead className="table-light">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Capacidad</th>
-                <th scope="col">Ubicación</th>
+                <th scope="col">Sala</th>
+                <th scope="col">Inicio</th>
+                <th scope="col">Fin</th>
+                <th scope="col">Estado</th>
               </tr>
             </thead>
             <tbody>
-              {rooms.length === 0 ? (
+              {reservas.length === 0 ? (
                 <tr>
-                  <td colSpan={4} className="text-center py-4 text-muted">
-                    No hay salas registradas en el sistema.
+                  <td colSpan={5} className="text-center py-4 text-muted">
+                    No tienes reservas registradas.
                   </td>
                 </tr>
               ) : (
-                rooms.map((room, index) => (
-                  <tr key={room.id}>
+                reservas.map((reserva, index) => (
+                  <tr key={reserva.id}>
                     <th scope="row">{index + 1}</th>
                     <td>
-                      <strong>{room.name}</strong>
+                      <strong>{reserva.salaNombre}</strong>
                     </td>
-                    <td>{room.capacity} personas</td>
-                    <td>{room.location}</td>
+                    <td>{new Date(reserva.startTime).toLocaleString()}</td>
+                    <td>{new Date(reserva.endTime).toLocaleString()}</td>
+                    <td>{reserva.status}</td>
                   </tr>
                 ))
               )}
@@ -141,4 +119,4 @@ export function TablaSalas() {
   );
 }
 
-export default TablaSalas;
+export default TablaReservas;
