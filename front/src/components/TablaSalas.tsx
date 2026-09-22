@@ -77,14 +77,16 @@ export function TablaSalas() {
         </div>
 
         <div>
-          <button
-            className="btn btn-outline-primary btn-sm"
-            onClick={() => {
-              navigate("/TablaReservas");
-            }}
-          >
-            Ver reservas
-          </button>
+          {!esAdmin && (
+            <button
+              className="btn btn-outline-primary btn-sm"
+              onClick={() => {
+                navigate("/TablaReservas");
+              }}
+            >
+              Ver mis reservas
+            </button>
+          )}
           <button
             className="btn btn-outline-danger btn-sm"
             onClick={() => {
@@ -95,6 +97,29 @@ export function TablaSalas() {
             Cerrar Sesión
           </button>
         </div>
+      </div>
+
+      <div>
+        {esAdmin && (
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={() => {
+              navigate("/TablaReservas");
+            }}
+          >
+            + Crear Reservas
+          </button>
+        )}
+        {esAdmin && (
+          <button
+            className="btn btn-outline-primary btn-sm"
+            onClick={() => {
+              navigate("/TablaReservas");
+            }}
+          >
+            Gestionar reservas
+          </button>
+        )}
       </div>
 
       <div className="card shadow-sm p-3">

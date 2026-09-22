@@ -75,7 +75,7 @@ function Login() {
           </div>
 
           <button type="submit" className="btn btn-primary w-100">
-            Submit
+            Ingresar
           </button>
         </form>
       </div>

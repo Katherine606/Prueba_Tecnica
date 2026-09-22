@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../services/api";
+import {
+  obtenerReservas,
+  aprobarReservaService,
+  rechazarReservaService,
+} from "../services/reservas";
 
 interface Reservation {
   id: number;
@@ -13,6 +17,7 @@ interface Reservation {
 
 export function TablaReservas() {
   const [reservas, setReservas] = useState<Reservation[]>([]);
+  const [esAdmin, setEsAdmin] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
   const navigate = useNavigate();
@@ -24,15 +29,31 @@ export function TablaReservas() {
       return;
     }
 
+    try {
+      const payloadBase64 = token.split(".")[1];
+      const decodedPayload = JSON.parse(atob(payloadBase64));
+
+      const rolUser =
+        decodedPayload[
+          "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+        ] ||
+        decodedPayload["role"] ||
+        decodedPayload["Rol"] ||
+        "";
+
+      setEsAdmin(rolUser.toLowerCase() === "admin");
+    } catch (e) {
+      console.error("No se pudo leer el rol del token", e);
+    }
+
     cargarMisReservas();
   }, [navigate]);
 
   const cargarMisReservas = async () => {
     try {
       setLoading(true);
-
-      const response = await api.get("/reservations");
-      setReservas(response.data);
+      const data = await obtenerReservas();
+      setReservas(data);
     } catch (err: any) {
       if (err.response && err.response.data && err.response.data.mensaje) {
         setError(err.response.data.mensaje);
@@ -41,6 +62,24 @@ export function TablaReservas() {
       }
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleAprobar = async (id: number) => {
+    try {
+      await aprobarReservaService(id);
+      cargarMisReservas();
+    } catch (err: any) {
+      alert("Error al aprobar la reserva");
+    }
+  };
+
+  const handleRechazar = async (id: number) => {
+    try {
+      await rechazarReservaService(id);
+      cargarMisReservas();
+    } catch (err: any) {
+      alert("Error al rechazar la reserva");
     }
   };
 
@@ -58,7 +97,7 @@ export function TablaReservas() {
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
-          <h2>Mis Reservas</h2>
+          <h2>Gestión de Reservas</h2>
         </div>
 
         <div>
@@ -68,7 +107,7 @@ export function TablaReservas() {
               navigate("/salas");
             }}
           >
-            Volver
+            Volver a Salas
           </button>
         </div>
       </div>
@@ -86,16 +125,21 @@ export function TablaReservas() {
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Sala</th>
+                <th scope="col">Usuario</th>
                 <th scope="col">Inicio</th>
                 <th scope="col">Fin</th>
                 <th scope="col">Estado</th>
+                {esAdmin && <th scope="col">Acciones</th>}
               </tr>
             </thead>
             <tbody>
               {reservas.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="text-center py-4 text-muted">
-                    No tienes reservas registradas.
+                  <td
+                    colSpan={esAdmin ? 7 : 6}
+                    className="text-center py-4 text-muted"
+                  >
+                    No hay reservas registradas.
                   </td>
                 </tr>
               ) : (
@@ -105,9 +149,29 @@ export function TablaReservas() {
                     <td>
                       <strong>{reserva.salaNombre}</strong>
                     </td>
+                    <td>{reserva.usuarioNombre || "N/D"}</td>
                     <td>{new Date(reserva.startTime).toLocaleString()}</td>
                     <td>{new Date(reserva.endTime).toLocaleString()}</td>
                     <td>{reserva.status}</td>
+
+                    {esAdmin && (
+                      <td>
+                        <div className="d-flex gap-2">
+                          <button
+                            className="btn btn-success btn-sm"
+                            onClick={() => handleAprobar(reserva.id)}
+                          >
+                            Aprobar
+                          </button>
+                          <button
+                            className="btn btn-danger btn-sm"
+                            onClick={() => handleRechazar(reserva.id)}
+                          >
+                            Rechazar
+                          </button>
+                        </div>
+                      </td>
+                    )}
                   </tr>
                 ))
               )}
