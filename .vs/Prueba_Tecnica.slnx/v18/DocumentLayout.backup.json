@@ -132,7 +132,7 @@
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Services\\ReservationService.cs",
               "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\ReservationService.cs",
               "RelativeToolTip": "Prueba_Tecnica\\Services\\ReservationService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAQwGkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T18:57:59.33Z",
               "IsPinned": true,
@@ -156,8 +156,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T18:55:44.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T18:55:44.674Z"
             },
             {
               "$type": "Document",
@@ -169,8 +168,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Controllers\\ReservationController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAuwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:13:45.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:13:45.925Z"
             },
             {
               "$type": "Document",
@@ -182,8 +180,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Program.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAQwIkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T14:52:40.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T14:52:40.233Z"
             },
             {
               "$type": "Document",
@@ -195,8 +192,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Controllers\\RoomsController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA4wB4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:05:09.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:05:09.748Z"
             },
             {
               "$type": "Document",
@@ -208,8 +204,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Services\\UserService.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowB4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:27:48.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:27:48.386Z"
             },
             {
               "$type": "Document",
@@ -221,8 +216,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Respositories\\UserRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:24:32.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:24:32.705Z"
             },
             {
               "$type": "Document",
@@ -234,8 +228,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Services\\AuthService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:57:30.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:57:30.09Z"
             },
             {
               "$type": "Document",
@@ -247,8 +240,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\ReservaListaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:36:17.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:36:17.105Z"
             },
             {
               "$type": "Document",
@@ -260,8 +252,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:06:51.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:06:51.626Z"
             },
             {
               "$type": "Document",
@@ -273,8 +264,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:24:23.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:24:23.135Z"
             },
             {
               "$type": "Document",
@@ -286,8 +276,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\ReservaCrearDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:02:20.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:02:20.91Z"
             },
             {
               "$type": "Document",
@@ -299,8 +288,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\Entities\\Reservation.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAQwBgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:30:21.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:30:21.883Z"
             },
             {
               "$type": "Document",
@@ -312,8 +300,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Services\\RoomsService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:10:11.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:10:11.488Z"
             },
             {
               "$type": "Document",
@@ -325,8 +312,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\Entities\\Room.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:29:21.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:29:21.784Z"
             },
             {
               "$type": "Document",
@@ -338,8 +324,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:08:32.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:08:32.972Z"
             },
             {
               "$type": "Document",
@@ -351,8 +336,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:26:25.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:26:25.129Z"
             },
             {
               "$type": "Document",
@@ -364,8 +348,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:39:09.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:39:09.09Z"
             },
             {
               "$type": "Document",
@@ -377,8 +360,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-21T14:51:18.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T14:51:18.687Z"
             },
             {
               "$type": "Document",
@@ -390,8 +372,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:57:44.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:57:44.66Z"
             },
             {
               "$type": "Document",
@@ -403,8 +384,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:29:01.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:29:01.953Z"
             },
             {
               "$type": "Document",
@@ -416,8 +396,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Exceptions\\ApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:02:44.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:02:44.462Z"
             },
             {
               "$type": "Document",
@@ -429,8 +408,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Migrations\\20260921160235_MigracionInicial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:02:38.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:02:38.709Z"
             },
             {
               "$type": "Document",
@@ -442,8 +420,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Respositories\\AuthRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:52:34.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:52:34.555Z"
             },
             {
               "$type": "Document",
@@ -455,8 +432,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:05:05.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:05:05.988Z"
             },
             {
               "$type": "Document",
@@ -468,8 +444,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Prueba_Tecnica.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-21T14:59:44.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T14:59:44.472Z"
             },
             {
               "$type": "Document",
@@ -481,8 +456,7 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:28:21.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:28:21.27Z"
             },
             {
               "$type": "Document",
@@ -494,8 +468,11 @@
               "RelativeToolTip": "Prueba_Tecnica\\Middlewares\\ExcepcionesGlobales.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:02:04.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T15:02:04.815Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         },
