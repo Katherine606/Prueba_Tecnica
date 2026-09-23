@@ -49,7 +49,7 @@ namespace Prueba_Tecnica.Services
         }
 
         // Listar las reservas del usuario autenticado automáticamente
-        public async Task<IEnumerable<ReservaListaDto>> ListarMisReservasAsync()
+        public async Task<IEnumerable<ReservaListaUserDto>> ListarMisReservasAsync()
         {
             var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
@@ -65,13 +65,12 @@ namespace Prueba_Tecnica.Services
                 throw new ApiException("No tienes reservas registradas.", 404);
             }
 
-            return reservas.Select(r => new ReservaListaDto
+            return reservas.Select(r => new ReservaListaUserDto
             {
                 Id = r.Id,
                 StartTime = r.StartTime,
                 EndTime = r.EndTime,
                 Status = r.Status,
-                UsuarioNombre = r.User != null ? r.User.fullName : "",
                 SalaNombre = r.Room != null ? r.Room.Name : ""
             }).ToList();
         }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../services/api";
+import ModalCrearSala from "./ModalCrearSala"; // Importas tu modal independiente
 
 interface Room {
   id: number;
@@ -14,6 +15,7 @@ export function TablaSalas() {
   const [esAdmin, setEsAdmin] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
+  const [showModal, setShowModal] = useState<boolean>(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -79,7 +81,7 @@ export function TablaSalas() {
         <div>
           {!esAdmin && (
             <button
-              className="btn btn-outline-primary btn-sm"
+              className="btn btn-outline-primary btn-sm me-2"
               onClick={() => {
                 navigate("/TablaReservas");
               }}
@@ -99,15 +101,13 @@ export function TablaSalas() {
         </div>
       </div>
 
-      <div>
+      <div className="mb-3 d-flex gap-2">
         {esAdmin && (
           <button
             className="btn btn-primary btn-sm"
-            onClick={() => {
-              navigate("/TablaReservas");
-            }}
+            onClick={() => setShowModal(true)} // Abre el modal de creación
           >
-            + Crear Reservas
+            + Crear sala
           </button>
         )}
         {esAdmin && (
@@ -162,6 +162,11 @@ export function TablaSalas() {
           </table>
         </div>
       </div>
+      <ModalCrearSala
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        onSalaCreada={cargarSalas}
+      />
     </div>
   );
 }

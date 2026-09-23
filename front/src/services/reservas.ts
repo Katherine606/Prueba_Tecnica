@@ -1,6 +1,11 @@
 import api from "./api";
 
 export const obtenerReservas = async () => {
+  const response = await api.get("/reservations/todas");
+  return response.data;
+};
+
+export const obtenerMisReservas = async () => {
   const response = await api.get("/reservations");
   return response.data;
 };

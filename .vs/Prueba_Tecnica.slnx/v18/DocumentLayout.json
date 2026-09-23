@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\models\\dtos\\reservalistauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\reservalistauserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\models\\dtos\\reservalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\reservalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\roomsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\services\\roomsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\respositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\respositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\respositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\roomsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\services\\roomsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\models\\dtos\\usercreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\usercreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\roomcreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\models\\dtos\\reservalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\reservalistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\models\\dtos\\reservacreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\reservacreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,20 +67,8 @@
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|solutionrelative:prueba_tecnica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C458AD64-996F-D51E-BF92-88DE06EC1ED4}|Prueba_Tecnica\\Prueba_Tecnica.csproj|c:\\users\\kmendez\\source\\repos\\prueba_tecnica\\prueba_tecnica\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,17 +126,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ReservationService.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\ReservationService.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Services\\ReservationService.cs",
               "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\ReservationService.cs",
               "RelativeToolTip": "Prueba_Tecnica\\Services\\ReservationService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswGkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T18:57:59.33Z",
               "IsPinned": true,
@@ -148,20 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserCrearDto.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:26:25.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "RoomsService.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\RoomsService.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Services\\RoomsService.cs",
@@ -169,90 +160,37 @@
               "RelativeToolTip": "Prueba_Tecnica\\Services\\RoomsService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:10:11.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:10:11.488Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\UserRepository.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Program.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Program.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Program.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Program.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAAIcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:24:32.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoomsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:08:32.972Z",
+              "WhenOpened": "2026-09-21T14:52:40.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReservationsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
+              "Title": "ReservaListaUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\ReservaListaUserDto.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\ReservaListaUserDto.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\ReservaListaUserDto.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\ReservaListaUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T18:55:44.674Z",
+              "WhenOpened": "2026-09-23T15:59:44.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\AuthRepository.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\AuthRepository.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\AuthRepository.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\AuthRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T15:52:34.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserListaDto.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:29:01.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomCrearDto.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:06:51.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "ReservaListaDto.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\ReservaListaDto.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\ReservaListaDto.cs",
@@ -265,7 +203,115 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T19:13:45.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA0wB4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:05:09.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReservationsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\ReservationsRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T18:55:44.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\AuthRepository.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\AuthRepository.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T15:52:34.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\RoomsRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:08:32.972Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Respositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Respositories\\UserRepository.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Respositories\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:24:32.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCrearDto.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:26:25.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserListaDto.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\UserListaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:29:01.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoomCrearDto.cs",
+              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
+              "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
+              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
+              "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\RoomCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T16:06:51.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ReservaCrearDto.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\ReservaCrearDto.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\ReservaCrearDto.cs",
@@ -273,12 +319,11 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\ReservaCrearDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:02:20.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:02:20.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\DTOs\\LoginDto.cs",
@@ -286,12 +331,11 @@
               "RelativeToolTip": "Prueba_Tecnica\\Models\\DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:39:09.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T16:39:09.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Services\\UserService.cs",
@@ -303,43 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\RoomsController.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA4wB4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T16:05:09.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Program.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Program.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Program.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Program.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAQwIkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T14:52:40.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "Prueba_Tecnica\\Controllers\\ReservationController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:13:45.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Services\\AuthService.cs",
@@ -351,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\UserController.cs",
@@ -363,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\Entities\\Reservation.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\Entities\\Reservation.cs",
@@ -375,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\Entities\\Room.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\Entities\\Room.cs",
@@ -387,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\appsettings.json",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\appsettings.json",
@@ -399,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Controllers\\AuthController.cs",
@@ -411,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ApiException.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Exceptions\\ApiException.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Exceptions\\ApiException.cs",
@@ -423,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "20260921160235_MigracionInicial.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Migrations\\20260921160235_MigracionInicial.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Migrations\\20260921160235_MigracionInicial.cs",
@@ -435,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\AppDbContext.cs",
@@ -447,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Prueba_Tecnica.csproj",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Prueba_Tecnica.csproj",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Prueba_Tecnica.csproj",
@@ -459,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Models\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Models\\Entities\\User.cs",
@@ -471,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ExcepcionesGlobales.cs",
               "DocumentMoniker": "C:\\Users\\kmendez\\source\\repos\\Prueba_Tecnica\\Prueba_Tecnica\\Middlewares\\ExcepcionesGlobales.cs",
               "RelativeDocumentMoniker": "Prueba_Tecnica\\Middlewares\\ExcepcionesGlobales.cs",
