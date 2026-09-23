@@ -17,6 +17,7 @@ namespace Prueba_Tecnica.Models.DTOs
         public string FullName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "El rol es obligatorio.")]
+        [RegularExpression("^(User|Admin)$", ErrorMessage = "El rol debe ser 'User' o 'Admin'.")]
         public string Role { get; set; } = "User";
     }
 

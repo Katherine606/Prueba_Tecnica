@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Prueba_Tecnica.Exceptions;
 using Prueba_Tecnica.Models.DTOs;
 using Prueba_Tecnica.Services;
@@ -17,6 +18,7 @@ namespace Prueba_Tecnica.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ListarUsuarios()
         {
             var users = await _userService.ListarUsuariosAsync();
@@ -24,13 +26,14 @@ namespace Prueba_Tecnica.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin, User")]
+
         public async Task<IActionResult> CrearUsuario([FromBody] UserCrearDto dto)
         {
    
            var nuevoUser = await _userService.CrearUsuarioAsync(dto);
            return StatusCode(201, new { message = "Usuario creado exitosamente.", user = nuevoUser });
-            
-       
+
         }
     }
 }

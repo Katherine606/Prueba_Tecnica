@@ -1,4 +1,6 @@
-﻿namespace Prueba_Tecnica.Models.DTOs
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Prueba_Tecnica.Models.DTOs
 {
     public class ReservaListaDto
     {
@@ -6,7 +8,9 @@
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string Status { get; set; } = string.Empty;
-        public string UsuarioNombre { get; set; } = string.Empty;
-        public string SalaNombre { get; set; } = string.Empty;
+
+     
+        public required string UsuarioNombre { get; set; }
+        public required string SalaNombre { get; set; }
     }
 }

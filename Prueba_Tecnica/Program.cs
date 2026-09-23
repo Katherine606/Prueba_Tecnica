@@ -71,9 +71,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
 
 // Inyección de dependencias (Repositorios y Servicios)
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<RoomsRepository>();
 builder.Services.AddScoped<RoomService>();
 builder.Services.AddScoped<UserRepository>();

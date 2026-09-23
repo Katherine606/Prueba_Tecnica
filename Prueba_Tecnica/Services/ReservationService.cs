@@ -1,36 +1,42 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
 using Prueba_Tecnica.Exceptions;
-using Prueba_Tecnica.Models;
 using Prueba_Tecnica.Models.DTOs;
 using Prueba_Tecnica.Models.Entities;
 using Prueba_Tecnica.Repositories;
 using Prueba_Tecnica.Respositories;
+using System.Security.Claims;
 
 namespace Prueba_Tecnica.Services
 {
     public class ReservationService
     {
         private readonly ReservationsRepository _reservationRepository;
-        private readonly AppDbContext _context;
+        private readonly RoomsRepository _roomsRepository;
+        private readonly UserRepository _userRepository;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ReservationService(ReservationsRepository reservationRepository, AppDbContext context)
+        public ReservationService(
+            ReservationsRepository reservationRepository,
+            RoomsRepository roomsRepository,
+            UserRepository userRepository,
+            IHttpContextAccessor httpContextAccessor)
         {
             _reservationRepository = reservationRepository;
-            _context = context;
+            _roomsRepository = roomsRepository;
+            _userRepository = userRepository;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-
-       
+        // Listar todas las reservas (general)
         public async Task<IEnumerable<ReservaListaDto>> ListarReservasAsync()
         {
             var reservas = await _reservationRepository.ListarReservasAsync();
 
             if (reservas == null || !reservas.Any())
             {
-                throw new ApiException("No hay reservas", 400);
+                throw new ApiException("No hay reservas", 404);
             }
 
-
             return reservas.Select(r => new ReservaListaDto
             {
                 Id = r.Id,
@@ -42,13 +48,22 @@ namespace Prueba_Tecnica.Services
             }).ToList();
         }
 
-        public async Task<IEnumerable<ReservaListaDto>> ObtenerReservasPorUsuarioAsync(int userId)
+        // Listar las reservas del usuario autenticado automáticamente
+        public async Task<IEnumerable<ReservaListaDto>> ListarMisReservasAsync()
         {
-            var reservas = await _context.Reservations
-                .Where(r => r.UserId == userId)
-                .Include(r => r.User)
-                .Include(r => r.Room)
-                .ToListAsync();
+            var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(userIdClaim, out int userId))
+            {
+                throw new ApiException("No autorizado o token inválido.", 401);
+            }
+
+            var reservas = await _reservationRepository.ListarReservasPorIdAsync(userId);
+
+            if (reservas == null)
+            {
+                throw new ApiException("No tienes reservas registradas.", 404);
+            }
 
             return reservas.Select(r => new ReservaListaDto
             {
@@ -61,12 +76,12 @@ namespace Prueba_Tecnica.Services
             }).ToList();
         }
 
-
-        public async Task<Reservation> CrearReservasAsync(ReservaCrearDto dto)
+        // Crear reservas asignando el usuario del token automáticamente
+        public async Task CrearReservasAsync(ReservaCrearDto dto)
         {
             if (dto.StartTime < DateTime.Today)
             {
-                throw new ApiException("La fecha de la reserva no puede ser anterior a la fecha actual.", 400);
+                throw new ApiException("La hora de la reserva no puede ser anterior a la fecha actual.", 400);
             }
 
             if (dto.EndTime <= dto.StartTime)
@@ -74,37 +89,46 @@ namespace Prueba_Tecnica.Services
                 throw new ApiException("La hora de finalización deberá ser posterior a la hora de inicio.", 400);
             }
 
-            var reservaRoom = await _context.Rooms.FindAsync(dto.RoomId);
+            var cruze = await _reservationRepository.ExisteSolapamientoAsync(dto.RoomId, dto.StartTime, dto.EndTime);
+
+            if (cruze)
+            {
+                throw new ApiException("La sala ya se encuentra reservada en ese rango de horario.", 400);
+            }
+
+            var reservaRoom = await _roomsRepository.ObtenerSalaAsync(dto.RoomId);
+
             if (reservaRoom == null) throw new ApiException("La sala no existe.", 404);
 
-            var reservaUser = await _context.Users.FindAsync(dto.UserId);
-            if (reservaUser == null) throw new ApiException("El usuario no existe.", 404);
+            var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            
+            if (!int.TryParse(userIdClaim, out int userId))
+            {
+                throw new ApiException("No autorizado para crear reservas.", 401);
+            }
 
             var reserva = new Reservation
             {
                 StartTime = dto.StartTime,
                 EndTime = dto.EndTime,
                 Status = "pendiente",
-                UserId = dto.UserId,
+                UserId = userId,
                 RoomId = dto.RoomId
             };
 
             await _reservationRepository.CrearReservasAsync(reserva);
             await _reservationRepository.SaveChangesAsync();
 
-            return reserva;
         }
 
         public async Task AprobarReservaAsync(int reservaId)
         {
-
             var reserva = await _reservationRepository.ObtenerReservaAsync(reservaId);
 
             if (reserva != null)
             {
                 reserva.Status = "aprobada";
-                
-                await _context.SaveChangesAsync();
+                await _reservationRepository.SaveChangesAsync();
             }
             else
             {
@@ -114,15 +138,12 @@ namespace Prueba_Tecnica.Services
 
         public async Task RechazarReservaAsync(int reservaId)
         {
-
             var reserva = await _reservationRepository.ObtenerReservaAsync(reservaId);
 
             if (reserva != null)
             {
                 reserva.Status = "rechazada";
-
-
-                await _context.SaveChangesAsync();
+                await _reservationRepository.SaveChangesAsync();
             }
             else
             {

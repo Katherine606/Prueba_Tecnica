@@ -11,17 +11,18 @@ namespace Prueba_Tecnica.Services
     public class UserService
     {
         private readonly UserRepository _userRepository;
-        private readonly AppDbContext _context;
-        public UserService(UserRepository userRepository, AppDbContext context)
+        private readonly AuthRepository _authRepository;
+
+        public UserService(UserRepository userRepository, AuthRepository authRepository)
         {
             _userRepository = userRepository;
-            _context = context;
+            _authRepository = authRepository;
+
         }
 
         public async Task<IEnumerable<UserListaDto>> ListarUsuariosAsync()
         {
             var users = await _userRepository.ListarUsuariosAsync();
-
           
             return users.Select(u => new UserListaDto
             {
@@ -35,11 +36,13 @@ namespace Prueba_Tecnica.Services
         public async Task<UserListaDto> CrearUsuarioAsync(UserCrearDto dto)
         {
             
-            var existeEmail = await _context.Users.AnyAsync(u => u.email == dto.Email);
-            if (existeEmail)
+            var existeEmail = await _authRepository.ObtenerEmailAsync(dto.Email);
+
+            if (existeEmail != null)
             {
                 throw new ApiException("El correo electrónico ya está registrado.", 400);
             }
+
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
             var user = new User
             {

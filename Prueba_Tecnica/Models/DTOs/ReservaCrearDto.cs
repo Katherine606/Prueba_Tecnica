@@ -6,17 +6,13 @@ namespace Prueba_Tecnica.Models.DTOs
 {
     public class ReservaCrearDto
     {
-        [Required]
+        [Required(ErrorMessage = "La fecha y hora de inicio son obligatorias.")]
         public DateTime StartTime { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "La fecha y hora de fin son obligatorias.")]
         public DateTime EndTime { get; set; }
 
-        [Required]
-        public int UserId { get; set; }
-
-
-        [Required]
+        [Required(ErrorMessage = "Debe especificar la sala.")]
         public int RoomId { get; set; }
     }
 }

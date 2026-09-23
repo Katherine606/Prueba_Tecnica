@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Prueba_Tecnica.Models.DTOs;
 using Prueba_Tecnica.Services;
 
@@ -17,6 +18,7 @@ namespace Prueba_Tecnica.Controllers
 
    
         [HttpGet]
+        [Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> ListarSalas()
         {
             var salas = await _roomService.ListarSalasAsync();
@@ -25,6 +27,7 @@ namespace Prueba_Tecnica.Controllers
 
       
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CrearSala([FromBody] RoomCrearDto model)
         {
  
